@@ -1,0 +1,131 @@
+h1 {
+  color: rgb(86, 77, 66);
+  font-size: 20px;
+}
+
+h2 {
+  color: rgb(86, 77, 66);
+  font-weight: bold;
+  font-size: 22px;
+}
+
+h3 {
+  color: rgb(132, 118, 101);
+  font-size: 12px;
+}
+
+small {
+  font-size: 8px;
+  margin-left: 15px;
+}
+
+a {
+  color: rgb(203, 186, 164);
+}
+
+.container {
+  font-family: monospace;
+  color: #674f04;
+}
+
+.what-weather-like {
+  display: block;
+  font-size: 18px;
+}
+
+.search-bar {
+  display: flex;
+}
+
+.search-button {
+  background-color: rgb(164, 150, 132);
+  border-color: rgb(203, 186, 164);
+  border-radius: 10px;
+  transition: all 200ms ease-in-out;
+}
+
+.search-button:hover {
+  opacity: 0.8;
+  color: bisque;
+  background-color: rgb(86, 77, 66);
+  border-color: bisque;
+  cursor: pointer;
+}
+
+.current-location-link {
+  font-size: 10px;
+  color: #907665;
+}
+
+.today-info {
+  background-color: #e4d7cb;
+  border: 2px solid rgb(203, 186, 164);
+  border-radius: 10px;
+}
+
+.today-is {
+  text-align: center;
+  color: #907665;
+  font-size: 20px;
+  margin: 0 2px 0 0;
+}
+
+.today-icon {
+  font-size: 65px;
+  text-align: center;
+  margin: 2px 0px 2px 20px;
+}
+
+.cels-vs-fahr {
+  font-size: 13px;
+  color: #907665;
+  vertical-align: super;
+}
+
+.empty-space {
+  color: #f5f0e8;
+}
+
+.this-week {
+  color: rgb(164, 150, 132);
+  font-size: 16px;
+  font-style: italic;
+}
+
+.weekday {
+  text-align: center;
+}
+
+.weekday-temp {
+  font-size: 12px;
+  color: rgb(164, 148, 128);
+}
+
+.detail-descriptor {
+  color: rgb(164, 148, 128);
+}
+
+.weather-box {
+  background-color: #f5f0e8;
+  background-image: linear-gradient(#f5f0e8 98%, #d3bd9a, #f5f0e8);
+  border: 2px solid rgb(211, 199, 187);
+  border-radius: 10px;
+  margin: 25px 5px 5px;
+  padding: 15px 30px 5px 25px;
+  max-width: 520px;
+}
+
+#search-input-bar {
+  background-color: #e4d7cb;
+  border: 1px solid rgb(164, 150, 132);
+  border-radius: 10px;
+}
+
+#celsius {
+  color: #907665;
+  text-decoration: none;
+}
+
+#fahrenheit {
+  color: #907665;
+}
