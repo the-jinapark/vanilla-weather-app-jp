@@ -67,6 +67,7 @@ a {
   text-align: center;
   color: #907665;
   font-size: 20px;
+  font-weight: bold;
   margin: 0 2px 0 0;
 }
 
@@ -88,17 +89,33 @@ a {
 
 .this-week {
   color: rgb(164, 150, 132);
-  font-size: 16px;
+  font-size: 18px;
   font-style: italic;
+}
+
+.weekdays-row {
+  padding-right: 10px;
 }
 
 .weekday {
   text-align: center;
 }
 
+.weekday-name {
+  font-weight: bold;
+}
+
 .weekday-temp {
   font-size: 12px;
   color: rgb(164, 148, 128);
+}
+
+.weekday-high-temp {
+  font-weight: bold;
+}
+
+.weekday-low-temp {
+  opacity: 0.8;
 }
 
 .detail-descriptor {
@@ -116,9 +133,24 @@ a {
 }
 
 #search-input-bar {
+  color: #674f04;
   background-color: #e4d7cb;
+  padding-left: 10px;
   border: 1px solid rgb(164, 150, 132);
   border-radius: 10px;
+}
+
+::placeholder {
+  color: #907665;
+}
+
+#city {
+  margin: 3px 0 3px;
+}
+
+#today-temperature {
+  padding-left: 3px;
+  font-size: 30px;
 }
 
 #celsius {
