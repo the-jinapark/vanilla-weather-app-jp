@@ -38,9 +38,12 @@ a {
 }
 
 .search-button {
+  width: 68px;
+  height: 30px;
   background-color: rgb(164, 150, 132);
   border-color: rgb(203, 186, 164);
   border-radius: 10px;
+  font-family: monospace;
   transition: all 200ms ease-in-out;
 }
 
@@ -58,6 +61,7 @@ a {
 }
 
 .today-info {
+  max-width: 158px;
   background-color: #e4d7cb;
   border: 2px solid rgb(203, 186, 164);
   border-radius: 10px;
@@ -83,17 +87,19 @@ a {
   vertical-align: super;
 }
 
-.empty-space {
-  color: #f5f0e8;
+div #current-description::first-letter {
+  text-transform: capitalize;
 }
 
 .this-week {
+  margin: 30px 0 5px;
   color: rgb(164, 150, 132);
   font-size: 18px;
   font-style: italic;
 }
 
 .weekdays-row {
+  margin: 18px 2px 4px;
   padding-right: 10px;
 }
 
@@ -127,7 +133,7 @@ a {
   background-image: linear-gradient(#f5f0e8 98%, #d3bd9a, #f5f0e8);
   border: 2px solid rgb(211, 199, 187);
   border-radius: 10px;
-  margin: 25px 5px 5px;
+  margin: 20px auto;
   padding: 15px 30px 5px 25px;
   max-width: 520px;
 }
@@ -135,9 +141,12 @@ a {
 #search-input-bar {
   color: #674f04;
   background-color: #e4d7cb;
+  max-width: 200px;
+  height: 28px;
   padding-left: 10px;
   border: 1px solid rgb(164, 150, 132);
   border-radius: 10px;
+  font-family: monospace;
 }
 
 ::placeholder {
