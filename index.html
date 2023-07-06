@@ -22,157 +22,167 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-box">
-        <p class="what-weather-like">What's the weather like in...</p>
-        <div class="row mb-4">
-          <div class="col-8">
-            <div class="search-bar">
-              <form id="city-search-form">
-                <input
-                  type="text"
-                  placeholder="Enter a city"
-                  autocomplete="off"
-                  id="search-input-bar"
-                />
-                <input type="submit" class="search-button" value="Search" />
-              </form>
-            </div>
-            <div class="col-12">
-              <a
-                href="#"
-                class="current-location-link"
-                id="current-location-link"
-              >
-                <i class="fa-solid fa-location-dot sidebar"></i> Want to know
-                the weather in your current location?
-              </a>
-            </div>
-            <!-- Search bar ends here -->
-
-            <div class="row mb-3">
-              <div class="col-12 empty-space">...</div>
-              <div class="col-12 this-week">This week...</div>
-            </div>
-            <div class="row weekdays-row">
-              <div class="col md-2 weekday">
-                <div class="weekday-icon" id="icon-one-of-five">
-                  <i class="fa-solid fa-cloud-rain" style="color: #4f3c20"></i>
-                </div>
-                <div class="weekday-name" id="day-one-of-five">Tue</div>
-                <div class="weekday-temp" id="temp-one-of-five">
-                  <span class="weekday-high-temp" id="day-1-high-temp">
-                    21°
-                  </span>
-                  <span class="weekday-low-temp" id="day-1-low-temp">
-                    13°
-                  </span>
-                </div>
+      <div class="include-credits">
+        <div class="weather-box">
+          <div class="row mb-3">
+            <div class="col-8">
+              <div class="what-weather-like">What's the weather like in...</div>
+              <div class="search-bar">
+                <form id="city-search-form">
+                  <input
+                    type="text"
+                    placeholder="Enter a city"
+                    autocomplete="off"
+                    id="search-input-bar"
+                  />
+                  <input type="submit" class="search-button" value="Search" />
+                </form>
               </div>
-              <div class="col md-2 weekday">
-                <div class="weekday-icon" id="icon-two-of-five">
-                  <i class="fa-regular fa-sun" style="color: #4f3c20"></i>
-                </div>
-                <div class="weekday-name" id="day-two-of-five">Wed</div>
-                <div class="weekday-temp" id="day-two-of-five">
-                  <span class="weekday-high-temp" id="day-2-high-temp">
-                    25°
-                  </span>
-                  <span class="weekday-low-temp" id="day-2-low-temp">
-                    14°
-                  </span>
-                </div>
-              </div>
-              <div class="col md-2 weekday">
-                <div class="weekday-icon" id="icon-three-of-five">
-                  <i class="fa-solid fa-cloud-sun" style="color: #4f3c20"></i>
-                </div>
-                <div class="weekday-name" id="day-three-of-five">Thu</div>
-                <div class="weekday-temp" id="temp-three-of-five">
-                  <span class="weekday-high-temp" id="day-3-high-temp">
-                    22°
-                  </span>
-                  <span class="weekday-low-temp" id="day-3-low-temp">
-                    10°
-                  </span>
-                </div>
-              </div>
-              <div class="col md-2 weekday">
-                <div class="weekday-icon" id="icon-four-of-five">
-                  <i class="fa-solid fa-cloud" style="color: #4f3c20"></i>
-                </div>
-                <div class="weekday-name" id="day-four-of-five">Fri</div>
-                <div class="weekday-temp" id="temp-four-of-five">
-                  <span class="weekday-high-temp" id="day-4-high-temp">
-                    28°
-                  </span>
-                  <span class="weekday-low-temp" id="day-4-low-temp">
-                    11°
-                  </span>
-                </div>
-              </div>
-              <div class="col md-2 weekday">
-                <div class="weekday-icon" id="icon-five-of-five">
-                  <i class="fa-regular fa-sun" style="color: #4f3c20"></i>
-                </div>
-                <div class="weekday-name" id="day-five-of-five">Sat</div>
-                <div class="weekday-temp" id="temp-five-of-five">
-                  <span class="weekday-high-temp" id="day-5-high-temp">
-                    24°
-                  </span>
-                  <span class="weekday-low-temp" id="day-5-low-temp">
-                    13°
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-4 today-info">
-            <div class="today-is" id="today-is">Monday</div>
-            <i class="fa-solid fa-cloud today-icon" style="color: #4f3c20"></i>
-            <br />
-            <h1 id="city">Tabriz</h1>
-            <h2>
-              <span id="today-temperature">19</span
-              ><span class="cels-vs-fahr"
-                ><a href="#" id="celsius">°C</a>|<a href="#" id="fahrenheit"
-                  >°F</a
+              <div class="col-12">
+                <a
+                  href="#"
+                  class="current-location-link"
+                  id="current-location-link"
                 >
-              </span>
-            </h2>
-            <h3>
-              <span id="current-description">
-                <strong> <em>Cloudy</em> </strong>
-              </span>
+                  <i class="fa-solid fa-location-dot sidebar"></i> Want to know
+                  the weather in your current location?
+                </a>
+              </div>
+              <!-- Search bar ends here -->
+
+              <div class="row mb-3">
+                <div class="col-12 this-week">This week...</div>
+              </div>
+              <div class="row weekdays-row">
+                <div class="col md-2 weekday">
+                  <div class="weekday-icon" id="icon-one-of-five">
+                    <i
+                      class="fa-solid fa-cloud-rain"
+                      style="color: #4f3c20"
+                    ></i>
+                  </div>
+                  <div class="weekday-name" id="day-one-of-five">Tue</div>
+                  <div class="weekday-temp" id="temp-one-of-five">
+                    <span class="weekday-high-temp" id="day-1-high-temp">
+                      21°
+                    </span>
+                    <span class="weekday-low-temp" id="day-1-low-temp">
+                      13°
+                    </span>
+                  </div>
+                </div>
+                <div class="col md-2 weekday">
+                  <div class="weekday-icon" id="icon-two-of-five">
+                    <i class="fa-regular fa-sun" style="color: #4f3c20"></i>
+                  </div>
+                  <div class="weekday-name" id="day-two-of-five">Wed</div>
+                  <div class="weekday-temp" id="day-two-of-five">
+                    <span class="weekday-high-temp" id="day-2-high-temp">
+                      25°
+                    </span>
+                    <span class="weekday-low-temp" id="day-2-low-temp">
+                      14°
+                    </span>
+                  </div>
+                </div>
+                <div class="col md-2 weekday">
+                  <div class="weekday-icon" id="icon-three-of-five">
+                    <i class="fa-solid fa-cloud-sun" style="color: #4f3c20"></i>
+                  </div>
+                  <div class="weekday-name" id="day-three-of-five">Thu</div>
+                  <div class="weekday-temp" id="temp-three-of-five">
+                    <span class="weekday-high-temp" id="day-3-high-temp">
+                      22°
+                    </span>
+                    <span class="weekday-low-temp" id="day-3-low-temp">
+                      10°
+                    </span>
+                  </div>
+                </div>
+                <div class="col md-2 weekday">
+                  <div class="weekday-icon" id="icon-four-of-five">
+                    <i class="fa-solid fa-cloud" style="color: #4f3c20"></i>
+                  </div>
+                  <div class="weekday-name" id="day-four-of-five">Fri</div>
+                  <div class="weekday-temp" id="temp-four-of-five">
+                    <span class="weekday-high-temp" id="day-4-high-temp">
+                      28°
+                    </span>
+                    <span class="weekday-low-temp" id="day-4-low-temp">
+                      11°
+                    </span>
+                  </div>
+                </div>
+                <div class="col md-2 weekday">
+                  <div class="weekday-icon" id="icon-five-of-five">
+                    <i class="fa-regular fa-sun" style="color: #4f3c20"></i>
+                  </div>
+                  <div class="weekday-name" id="day-five-of-five">Sat</div>
+                  <div class="weekday-temp" id="temp-five-of-five">
+                    <span class="weekday-high-temp" id="day-5-high-temp">
+                      24°
+                    </span>
+                    <span class="weekday-low-temp" id="day-5-low-temp">
+                      13°
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 today-info">
+              <div class="today-is" id="today-is">Monday</div>
+              <img
+                src="https://openweathermap.org/img/wn/03d.png"
+                alt="Today's weather icon"
+                class="today-icon"
+                id="todays-icon"
+              />
               <br />
-              <span class="detail-descriptor current-precipitation"
-                >Humidity:</span
-              >
-              <span id="current-humidity">37%</span> <br />
-              <span class="detail-descriptor current-wind-speed">Wind:</span>
-              <span id="current-wind-speed">0 km/h</span> <br />
-              <span class="detail-descriptor current-time">Current time:</span>
-              <span id="current-time">13:01</span>
-            </h3>
+              <h1 id="city">Tabriz</h1>
+              <h2>
+                <span id="today-temperature">19</span
+                ><span class="cels-vs-fahr"
+                  ><a href="#" id="celsius">°C</a>|<a href="#" id="fahrenheit"
+                    >°F</a
+                  >
+                </span>
+              </h2>
+              <h3>
+                <div id="current-description">Cloudy</div>
+                <span class="detail-descriptor current-precipitation"
+                  >Humidity:</span
+                >
+                <span id="current-humidity">37%</span> <br />
+                <span class="detail-descriptor current-wind-speed">Wind:</span>
+                <span id="current-wind-speed">0 km/h</span> <br />
+                <span class="detail-descriptor current-time"
+                  >Last updated:</span
+                >
+                <span id="current-time">13:01</span>
+              </h3>
+            </div>
           </div>
         </div>
+        <!-- Weather box ends here -->
+        <small class="credits">
+          <a
+            href="https://github.com/the-jinapark/vanilla-weather-app-jp"
+            target="_blank"
+            >Open-source code</a
+          >
+          by
+          <a
+            href="https://www.shecodesfoundation.org/candidates/jina-park-south-korean"
+            target="_blank"
+            >Jina Park</a
+          >
+          for the
+          <a href="https://www.shecodes.io/plus" target="_blank"
+            >SheCodes Plus</a
+          >
+          workshop
+        </small>
       </div>
-      <!-- Weather box ends here -->
-      <small class="credits">
-        <a
-          href="https://github.com/the-jinapark/vanilla-weather-app-jp"
-          target="_blank"
-          >Open-source code</a
-        >
-        by
-        <a
-          href="https://www.shecodesfoundation.org/candidates/jina-park-south-korean"
-          target="_blank"
-          >Jina Park</a
-        >
-        for the
-        <a href="https://www.shecodes.io/plus" target="_blank">SheCodes Plus</a>
-        workshop
-      </small>
     </div>
     <!-- This is outside the container div. No good; head back. -->
     <script src="src/index.js"></script>
