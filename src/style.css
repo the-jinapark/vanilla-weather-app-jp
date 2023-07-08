@@ -73,15 +73,14 @@ a {
   color: #907665;
   font-size: 22px;
   font-weight: bold;
-  margin: 5px 2px 0 0;
+  margin: 5px 2px 0 2px;
 }
 
 .today-icon {
   position: absolute;
-  top: 5px;
+  top: 22px;
   right: auto;
-  width: 140px;
-  margin: 2px;
+  margin: 2px 0 2px 12px;
 }
 
 .cels-vs-fahr {
@@ -170,8 +169,8 @@ div #current-description::first-letter {
 }
 
 #today-temperature {
-  padding-left: 10px;
-  font-size: 35px;
+  padding-left: 8px;
+  font-size: 38px;
 }
 
 #celsius {

@@ -47,12 +47,13 @@ timeToday.innerHTML = formatTime(now);
 
 function showTemperature(response) {
   console.log(response); // this line needs to go once things are ready to run
-  // document.querySelector("todays-icon").outerHTML = `<img
-  //     src="https://openweathermap.org/img/wn/${response.data.weather[0].icon}.png"
-  //     alt="Today's weather icon"
-  //     class="today-icon"
-  //     id="todays-icon"
-  //   />`;
+
+  let todayIcon = document.querySelector("#todays-icon");
+  todayIcon.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  todayIcon.setAttribute("alt", `${response.data.weather[0].description}`);
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#today-temperature").innerHTML = Math.round(
     response.data.main.temp
