@@ -169,7 +169,7 @@ div #current-description::first-letter {
 }
 
 #today-temperature {
-  padding-left: 8px;
+  padding-left: 10px;
   font-size: 38px;
 }
 

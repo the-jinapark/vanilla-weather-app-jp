@@ -48,6 +48,8 @@ timeToday.innerHTML = formatTime(now);
 function showTemperature(response) {
   console.log(response); // this line needs to go once things are ready to run
 
+  celsiusTemperature = response.data.main.temp;
+
   let todayIcon = document.querySelector("#todays-icon");
   todayIcon.setAttribute(
     "src",
@@ -137,20 +139,19 @@ form.addEventListener("submit", searchCity);
 /////////// Temperature Conversion ///////////
 /////////////////////////////////////////////
 // Display a temperature (i.e 19) in Celsius and add a link to convert it to Fahrenheit.
-// credit to Tetiana Zorenko's solution for successful conversions using Number()
 
 function convertToFahrenheit(event) {
   event.preventDefault();
   let todayTemperature = document.querySelector("#today-temperature");
-  let todayTemp = todayTemperature.innerHTML;
-  todayTemp = Number(todayTemp);
-  todayTemperature.innerHTML = Math.round((todayTemp * 9) / 5 + 32);
+  todayTemperature.innerHTML = Math.round((celsiusTemperature * 9) / 5 + 32);
 
   fahrenheitLink.style.textDecoration = "none";
   fahrenheitLink.style.fontWeight = "bold";
   fahrenheitLink.style.fontSize = "14px";
+  fahrenheitLink.style.cursor = "default";
   celsiusLink.style.fontSize = "10px";
   celsiusLink.style.fontWeight = "normal";
+  celsiusLink.style.cursor = "pointer";
 }
 
 // When clicking on Celsius, it should convert it back to Celsius.
@@ -158,16 +159,18 @@ function convertToFahrenheit(event) {
 function convertToCelsius(event) {
   event.preventDefault();
   let todayTemperature = document.querySelector("#today-temperature");
-  let todayTemp = todayTemperature.innerHTML;
-  todayTemp = Number(todayTemp);
-  todayTemperature.innerHTML = Math.round(((todayTemp - 32) * 5) / 9);
+  todayTemperature.innerHTML = Math.round(celsiusTemperature);
 
   celsiusLink.style.textDecoration = "none";
   celsiusLink.style.fontWeight = "bold";
   celsiusLink.style.fontSize = "14px";
+  celsiusLink.style.cursor = "default";
   fahrenheitLink.style.fontSize = "10px";
   fahrenheitLink.style.fontWeight = "normal";
+  fahrenheitLink.style.cursor = "pointer";
 }
+
+let celsiusTemperature = null;
 
 let fahrenheitLink = document.querySelector("#fahrenheit");
 fahrenheitLink.addEventListener("click", convertToFahrenheit);
