@@ -98,6 +98,14 @@ function getUserPosition(event) {
 let currentLocationLink = document.querySelector("#current-location-link");
 currentLocationLink.addEventListener("click", getUserPosition);
 
+// iii) // we don't want to show dummy data on load, so we'll call loadDefaultCity once on load
+function loadDefaultCity(city) {
+  let apiKey = "18939b60119d11659d9614b275d1b21b";
+  let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+  axios.get(apiURL).then(showTemperature);
+}
+loadDefaultCity("Tabriz");
+
 ///////////////////////////////////////////////
 //////////////// Search Engine ///////////////
 /////////////////////////////////////////////
